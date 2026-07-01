@@ -153,10 +153,21 @@ This project requires:
 
 ### STEP 1 - Clone the Repository
 
+This project uses Git Large File Storage (LFS) to store the data - folder and the persisted chroma_db - vector store.
+Before cloning, ensure Git LFS is installed:
+
 ```bash
-git clone https://github.com/davidtel999/hw3.git
-cd hw3
+git lfs install
 ```
+Then clone:
+
+```bash
+git clone https://github.com/davidtel999/Homework3.git
+cd Homework3
+```
+
+GitHub will not display large files (e.g., .sqlite3, .bin, .pdf) in the browser.
+They can download correctly after cloning with Git LFS.
 
 ---
 
@@ -275,4 +286,3 @@ The UI will open automatically in your browser.
 `ModuleNotFoundError: No module named 'torchvision'`
 
 These originate from Streamlit scanning installed packages and encountering optional sub-modules it doesn't strictly need, which are harmless and don't affect the application's execution. Uninstalling `transformers` can silence this extensive warning but is unrecommended, even though it's highly tempting: the `unstructured` library (used for `.html` parsing in this project) might rely on `transformers` for certain document-layout parsing paths, so removing it risks silently breaking ingestion.
-
