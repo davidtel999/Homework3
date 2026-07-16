@@ -1,23 +1,23 @@
-# Core Utilities:
-numpy==2.0.2
+# Core Utilities
+numpy==1.26.4        
 pandas==2.2.3
 pydantic==2.10.6
 
-# Retrieval & Vector DB:
+# Retrieval & Vector DB
 rank-bm25==0.2.2
-# Chromadb was intentionally left unpinned, as we downloaded it through langchain-chroma
+chromadb==0.4.24      
 
-# LangChain Tools:
+# LangChain Tools
 langchain-core==0.3.0
 langchain-community==0.3.0
 langchain-openai==0.2.0
 langchain-chroma==0.1.4
 langchain-text-splitters==0.3.0
 
-# Unstructured File Parsing:
-unstructured==0.16.0
+# Unstructured File Parsing
+unstructured==0.14.9   
 pypdf==4.3.0
 openpyxl==3.1.5
 
-# Streamlit UI (Bonus A):
+# Streamlit UI
 streamlit==1.58.0
